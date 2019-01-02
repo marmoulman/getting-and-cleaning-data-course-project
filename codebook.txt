@@ -1,3 +1,13 @@
+codebook:
+
+Below are the features as described in the initial data file. The changes made during the data processing were as follows:
+- Make variable names more readable
+- Remove the 'bandsEnergy' variable columns to tidy up data- they were unnecessary for our uses
+- Add a column for the 'Subject'
+- Add a column for the 'Activity'
+- Group data by the activity and subject
+- Average all values over subject and activity
+
 Feature Selection 
 =================
 
@@ -10,6 +20,8 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
+Activity
+Subject
 tBodyAcc-XYZ
 tGravityAcc-XYZ
 tBodyAccJerk-XYZ
